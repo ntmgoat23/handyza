@@ -1,5 +1,4 @@
-# handyza
-Service app like Uber for local services 
+
 # Handyza 🔧
 
 A service marketplace app like Uber/Bolt but for local services.
