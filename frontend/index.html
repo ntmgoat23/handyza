@@ -1,1 +1,44 @@
-<!-- Handyza Frontend -->)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Handyza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Handyza 🔧</h1>
+    <p>Request any service, anytime.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Request a Service</h2>
+      <input id="service" placeholder="Service (Plumber, Mechanic...)" />
+      <input id="location" placeholder="Location" />
+      <select id="payment">
+        <option value="cash">Cash</option>
+        <option value="card">Card</option>
+      </select>
+      <button onclick="requestService()">Request</button>
+    </section>
+
+    <section class="card">
+      <h2>Create Service Provider Profile</h2>
+      <input id="name" placeholder="Full Name" />
+      <input id="email" placeholder="Email" />
+      <input id="phone" placeholder="Phone Number" />
+      <input id="serviceType" placeholder="Service You Offer" />
+      <input type="file" id="photo" accept="image/*" />
+      <button onclick="createProfile()">Create Profile</button>
+    </section>
+
+    <section class="card">
+      <h2>Available Providers</h2>
+      <div id="providers"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
